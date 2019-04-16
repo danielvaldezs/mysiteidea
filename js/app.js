@@ -1,5 +1,6 @@
 var express = require ('express');
 var app = express();
+const port= process.env.PORT || 1337
 var router = express.Router();
 
 //path
@@ -15,7 +16,7 @@ app.get('/login',function(req,res){
 // app.get('',(req,res)=>{
 //     res.send('<h1>hola</h1>')});
 
-app.listen(1337,function(){
+app.listen(port,function(){
     console.log('I\'m listening ')
 });
 
